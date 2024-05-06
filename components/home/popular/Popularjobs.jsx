@@ -5,6 +5,7 @@ import styles from './popularjobs.style'
 import { useState } from 'react'
 import PopularJobCard from '../../common/cards/popular/PopularJobCard'
 import { useRouter } from 'expo-router'
+import useFetch from '../../'
 
 const Popularjobs = () => {
   const router = useRouter()
