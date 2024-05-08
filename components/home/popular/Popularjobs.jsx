@@ -11,11 +11,11 @@ const Popularjobs = () => {
 
   const { data, isLoading, error} = useFetch(
     'search', {
-      query:'Backend Developer',
+      query:'React Developer',
       num_pages:1
     }
   )
-  console.log(data)
+ 
   return (
     <View style={styles.container}>
       <View style={styles.header}>

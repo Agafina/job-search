@@ -6,7 +6,7 @@ import { useRouter } from 'expo-router'
 import useFetch from '../../../hooks/useFetch'
 import NearbyJobCard from '../../common/cards/nearby/NearbyJobCard'
 
-const Popularjobs = () => {
+const Nearbyjobs = () => {
   const router = useRouter()
 
   const { data, isLoading, error} = useFetch(
@@ -15,7 +15,7 @@ const Popularjobs = () => {
       num_pages:1
     }
   )
-  console.log(data)
+ 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -46,4 +46,4 @@ const Popularjobs = () => {
   )
 }
 
-export default Popularjobs
+export default Nearbyjobs
