@@ -8,7 +8,7 @@ const TabButton = ({name, activeTabs, onHandleSearchType}) => {
       style={styles.btn(name, activeTabs)}
       onPress={onHandleSearchType}
       >
-        <Text>{name}</Text>
+        <Text style={styles.btnText(name, activeTabs)}>{name}</Text>
       </TouchableOpacity>
   )
 }
